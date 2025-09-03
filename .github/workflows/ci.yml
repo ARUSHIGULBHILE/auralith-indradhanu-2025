@@ -1,0 +1,26 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, dev ]
+  pull_request:
+    branches: [ main, dev ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r backend/requirements.txt
+      - name: Lint (flake8 optional)
+        run: |
+          echo "Add flake8 or ruff here if desired"
+      - name: Unit tests
+        run: |
+          echo "Add pytest here when tests exist"
