@@ -1,0 +1,6 @@
+Digital Twin Farm - Architecture Notes
+
+- Frontend: Streamlit (frontend/app.py)
+- Backend: FastAPI (backend/main.py + backend/routes/)
+- Sensors: simulator in sensors/simulator.py or ESP32 in sensors/esp32/
+- Data: CSVs located in data/ directory

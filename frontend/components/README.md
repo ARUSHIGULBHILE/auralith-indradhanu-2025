@@ -1,0 +1,1 @@
+Place reusable frontend components here (cards, charts, badges).
