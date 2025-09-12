@@ -1,0 +1,6 @@
+
+streamlit>=1.18
+plotly
+pandas
+requests
+numpy
